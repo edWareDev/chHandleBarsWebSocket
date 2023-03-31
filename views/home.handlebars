@@ -1,0 +1,17 @@
+<h1>Stock</h1>
+<h2>Productos</h2>
+<div class="productos">
+    {{#if hayProductos}}
+    <ul>
+        {{#each productos}}
+        <li>
+            <h3>{{this.title}} - {{this.description}}</h3>
+            <a href="#">Precio: $ {{this.price}}</a>
+        </li>
+        {{/each}}
+    </ul>
+    {{else}}
+    <p>No hay Productos</p>
+    {{/if}}
+</div>
+<script src="./js/index.js"></script>
